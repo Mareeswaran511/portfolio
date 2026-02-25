@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mareeswaran Portfolio</title>
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        html { scroll-behavior: smooth; }
+        
+        /* THEME BACKGROUND EFFECT */
+        body { 
+            background-color: #ffffff; 
+            color: #212529; 
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Animated Background Blobs */
+        body::before, body::after {
+            content: "";
+            position: fixed;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            background: rgba(220, 53, 69, 0.05); /* Very light Bootstrap Red */
+            filter: blur(80px);
+            z-index: -1;
+            animation: floating 20s infinite alternate;
+        }
+
+        body::before { top: -100px; right: -100px; }
+        body::after { bottom: -100px; left: -100px; animation-delay: -10s; }
+
+        @keyframes floating {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(100px, 50px); }
+        }
+
+        .bg-formal { background-color: rgba(248, 249, 250, 0.7); backdrop-filter: blur(5px); } 
+
+        section {
+            min-height: 100vh;
+            padding-top: 100px; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .logo-img {
+            width: 80px; height: 80px;
+            border-radius: 50%; object-fit: cover;
+            border: 2px solid #dc3545; margin-right: 15px;
+        }
+
+        .navbar-brand { font-size: 1.8rem !important; }
+
+        /* Card Hover Effect */
+        .card { 
+            transition: 0.3s; 
+            border: 1px solid rgba(0,0,0,0.05) !important; 
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+        }
+        .card:hover { 
+            transform: translateY(-5px); 
+            box-shadow: 0 10px 20px rgba(220, 53, 69, 0.1) !important;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="#home">
+                <img src="marees.jpeg" class="logo-img"> PORTFOLIO
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myNav">
+                <ul class="navbar-nav ms-auto fw-bold">
+                    <li class="nav-item"><a class="nav-link px-3" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HOME -->
+    <section id="home" class="container text-center">
+        <h1 class="display-2 fw-bold">Hi, I'm <span class="text-danger">Mareeswaran</span></h1>
+        <div class="mt-4 fs-4 text-muted">
+            <p>I create modern websites by bringing together design and logic.</p>
+            <p>I use HTML, CSS, JS, and React to craft responsive interfaces, using Bootstrap for design and Java with SQL for the backend.</p>
+        </div>
+    </section>
+
+    <!-- ABOUT / EDUCATION -->
+    <section id="about" class="bg-formal">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">Education & <span class="text-danger">Resume</span></h2>
+            <div class="row justify-content-center g-4">
+                <div class="col-md-7">
+                    <div class="p-3 mb-3 border-start border-danger border-5 shadow-sm bg-white fw-bold">
+                        <h5 class="text-danger">PG Graduation</h5> Msc CS | Bharathidasan University | 2026
+                    </div>
+                    <div class="p-3 mb-3 border-start border-dark border-5 shadow-sm bg-white fw-bold">
+                        <h5 class="text-danger">UG Graduation</h5> Bsc CS | Bharathidasan University | 2022
+                    </div>
+                    <div class="p-3 mb-3 border-start border-dark border-5 shadow-sm bg-white fw-bold">
+                        <h5 class="text-danger">HSC</h5> Anna Govt Hr Sec School | State Board | 2019
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="p-4 border border-dark border-2 rounded bg-white shadow-sm">
+                        <h4 class="fw-bold">Resume</h4>
+                        <a href="Mareeswaran.P-Resume.pdf" download class="btn btn-danger mt-3">Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="container">
+        <h2 class="text-center mb-5 fw-bold">Technical <span class="text-danger">Skills</span></h2>
+        <div class="row g-4 text-center">
+            <div class="col-md-6">
+                <div class="card bg-dark text-white p-4 shadow">
+                    <h4 class="text-danger fw-bold">Front End</h4>
+                    HTML, CSS, JS, React, SQL
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card bg-danger text-white p-4 shadow">
+                    <h4 class="text-dark fw-bold">Back End</h4>
+                    Core Java, C, C++
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS (VERTICAL LIST) -->
+   <section id="projects" class="bg-formal">
+    <div class="container">
+        <h2 class="text-center mb-5 fw-bold">My <span class="text-danger">Projects</span></h2>
+        
+        <div class="row">
+            <!-- Project 1 -->
+            <div class="col-md-8 mx-auto mb-4">
+                <div class="card shadow p-4 text-center">
+                    <h4 class="text-dark fw-bold text-danger">Interactive Logic Calculator</h4>
+                    
+                    <p class="text-muted">Developed using <b>HTML, CSS, and JS</b> to create a functional interface that handles complex math logic with a clean, responsive design.</p>
+                    <a href="calculator.html" target="_blank" class="btn btn-outline-danger w-50 mx-auto fw-bold">View Project</a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="col-md-8 mx-auto mb-4">
+                <div class="card shadow p-4 text-center">
+                    <h4 class="text-dark fw-bold text-danger">Tactical Rock-Paper-Scissors</h4>
+                  
+                    <p class="text-muted">A dynamic game built with <b>HTML, CSS, and JS</b>, featuring automated computer logic and real-time score tracking for a seamless user experience.</p>
+                    <a href="rps.html" target="_blank" class="btn btn-outline-danger w-50 mx-auto fw-bold">Play Game</a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="container text-center fw-bold">
+        <h2 class="mb-5 fw-bold">Contact <span class="text-danger">Details</span></h2>
+        <div class="col-md-6 mx-auto p-4 border border-dark border-2 rounded shadow-sm bg-white">
+            <p>Email: <span class="text-danger">mareesm32@gmail.com</span></p>
+            <p>Phone: <span class="text-danger">+91 8270641037</span></p>
+            <p>Location: <span class="text-danger">Chennai, Tamilnadu</span></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/mareeswaran-p-534911268/" target="_blank" class="text-danger text-decoration-none">View Profile</a></p>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
