@@ -92,56 +92,58 @@
         </div>
     </nav>
 
-    <!-- HOME -->
-    <section id="home" class="container text-center">
+<!-- HOME SECTION -->
+    <section id="home" class="container text-center d-flex flex-column justify-content-center" style="height: 100vh;">
         <h1 class="display-2 fw-bold">Hi, I'm <span class="text-danger">Mareeswaran</span></h1>
-        <div class="mt-4 fs-4 text-muted">
-            <p>I create modern websites by bringing together design and logic.</p>
-            <p>I use HTML, CSS, JS, and React to craft responsive interfaces, using Bootstrap for design and Java with SQL for the backend.</p>
+        
+        <div class="mt-4 fs-4 text-muted mx-auto" style="max-width: 850px;">
+            <!-- This is the most important part to change -->
+            <f5>I am a <span class="text-dark fw-bold">Software Developer</span> with a solid foundation of 3 years in Quality Assurance at  <b>Softeon</b>.</f5>
+            <br>
+            <f5>I bridge the gap between design and logic using HTML, CSS, JS, React, and Java.</f5>
+            <f5>My professional background in testing is my greatest strength—it allows me to build websites that are not only beautiful but exceptionally robust, secure, and production-ready</f5>
+            <hr>
+            <a href="#about" class="btn btn-danger mt-3 px-5 py-3 shadow fw-bold">View My Experience</a>
         </div>
     </section>
 
-    <!-- ABOUT / EDUCATION -->
+<!-- ABOUT / EXPERIENCE / EDUCATION -->
     <section id="about" class="bg-formal">
         <div class="container">
-            <h2 class="text-center mb-5 fw-bold">Education & <span class="text-danger">Resume</span></h2>
-            <div class="row justify-content-center g-4">
+            <h2 class="text-center fw-bold">Experience & <span class="text-danger">Education</span></h2>
+            <div class="row justify-content-center g-3">
+                
                 <div class="col-md-7">
-                    <div class="p-3 mb-3 border-start border-danger border-5 shadow-sm bg-white fw-bold">
-                        <h5 class="text-danger">PG Graduation</h5> Msc CS | Bharathidasan University | 2026
+                    <!-- Professional Experience -->
+                    <h6 class="fw-bold mb-2 text-muted text-uppercase small">Professional Experience</h6>
+                    <div class="p-3 mb-3 border-start border-danger border-5 shadow-sm bg-white">
+                        <h5 class="text-danger fw-bold mb-1">Software Tester</h5>
+                        <div class="small fw-bold">Softeon | Jul 2022 - Dec 2025</div>
+                        <p class="text-muted mt-1 mb-0">Ensuring software quality through testing, bug tracking, and developer collaboration.</p>
                     </div>
-                    <div class="p-3 mb-3 border-start border-dark border-5 shadow-sm bg-white fw-bold">
-                        <h5 class="text-danger">UG Graduation</h5> Bsc CS | Bharathidasan University | 2022
-                    </div>
-                    <div class="p-3 mb-3 border-start border-dark border-5 shadow-sm bg-white fw-bold">
-                        <h5 class="text-danger">HSC</h5> Anna Govt Hr Sec School | State Board | 2019
-                    </div>
-                </div>
-                <div class="col-md-4 text-center">
-                    <div class="p-4 border border-dark border-2 rounded bg-white shadow-sm">
-                        <h4 class="fw-bold">Resume</h4>
-                        <a href="Mareeswaran.P-Resume.pdf" download class="btn btn-danger mt-3">Download CV</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="container">
-        <h2 class="text-center mb-5 fw-bold">Technical <span class="text-danger">Skills</span></h2>
-        <div class="row g-4 text-center">
-            <div class="col-md-6">
-                <div class="card bg-dark text-white p-4 shadow">
-                    <h4 class="text-danger fw-bold">Front End</h4>
-                    HTML, CSS, JS, React, SQL
+                    <!-- Education -->
+                    <h6 class="fw-bold mb-2 text-muted text-uppercase small">Education</h6>
+                    <div class="p-2 mb-2 border-start border-dark border-5 shadow-sm bg-white fw-bold">
+                        <span class="text-danger">PG:</span> Msc CS | Bharathidasan University | 2026
+                    </div>
+                    <div class="p-2 mb-2 border-start border-dark border-5 shadow-sm bg-white fw-bold">
+                        <span class="text-danger">UG:</span> Bsc CS | Bharathidasan University | 2022
+                    </div>
+                    <div class="p-2 mb-2 border-start border-dark border-5 shadow-sm bg-white fw-bold">
+                        <span class="text-danger">HSC:</span> Anna Govt Hr Sec School | 2019
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-6">
-                <div class="card bg-danger text-white p-4 shadow">
-                    <h4 class="text-dark fw-bold">Back End</h4>
-                    Core Java, C, C++
+
+                <!-- Resume Download Column -->
+                <div class="col-md-4 text-center">
+                    <div class="resume-box border border-dark border-2 rounded bg-white shadow-sm sticky-top" style="top: 100px;">
+                        <h4 class="fw-bold mb-2">Resume</h4>
+                        <p class="text-muted small mb-3">Updated with Softeon experience</p>
+                        <a href="Mareeswaran.P-Resume.pdf" download class="btn btn-danger btn-sm fw-bold w-100">Download CV</a>
+                    </div>
                 </div>
+
             </div>
         </div>
     </section>
